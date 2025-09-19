@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Opener in Blank Tab</title>
+    <title>math sites</title>
     <style>
         * {
             margin: 0;
@@ -129,14 +129,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>🌐 URL Opener</h1>
-        <p class="subtitle">Open any website in a new blank tab</p>
+        <h1>🌐 Math Sites</h1>
+        <p class="subtitle">Math Site repository</p>
         
         <div class="input-group">
             <input 
                 type="url" 
                 id="urlInput" 
-                placeholder="Enter URL (e.g., https://example.com)" 
+                placeholder="Enter Math Site (e.g., https://example.com)" 
                 autocomplete="url"
             >
         </div>
@@ -180,7 +180,7 @@
             const url = urlInput.value.trim();
             
             if (!url) {
-                showMessage('Please enter a URL', 'error');
+                showMessage('Please enter a math site', 'error');
                 return;
             }
             
@@ -222,7 +222,7 @@
             if (newTab) {
                 newTab.document.write(htmlContent);
                 newTab.document.close();
-                showMessage('Website opened in new tab!', 'success');
+                showMessage('math site opened in new tab!', 'success');
                 urlInput.value = '';
             } else {
                 showMessage('Pop-up blocked! Please allow pop-ups for this site.', 'error');
@@ -239,7 +239,7 @@
         // Show info message on load
         window.addEventListener('load', function() {
             setTimeout(() => {
-                showMessage('Enter any URL and click to open it in a new blank tab', 'info');
+                showMessage('Enter any math site', 'info');
             }, 500);
         });
     </script>
